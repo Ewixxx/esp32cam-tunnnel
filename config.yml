@@ -1,0 +1,7 @@
+tunnel: <TUNNEL-UUID>
+credentials-file: /root/.cloudflared/<TUNNEL-UUID>.json
+
+ingress:
+  - hostname: esp32.yourdomain.com
+    service: http://192.168.100.10:81
+  - service: http_status:404
